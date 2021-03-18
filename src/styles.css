@@ -1,0 +1,1467 @@
+/*This is the public CSS file for index.html, basically, the primary css file for the entire site. The entire css within this single page react app is written here */
+
+
+
+/* all generic code here */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    font-size: 2vw;
+    /* overscroll-behavior-y: contain;
+    user-select: none; */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body{
+    /* border: black solid; */
+    /* overscroll-behavior-y: contain;
+    user-select: none; */
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+
+
+
+/* component specific code here */
+
+/* handling styles for all the react routes */
+
+
+
+
+
+/* home route */
+
+.__te_adageInteriorStudio__Home{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.__te_adageInteriorStudio__Home_welcomeHeader{      
+    font-family: 'Raleway', sans-serif;
+    color: #f6daa8;
+    font-weight: 600;
+    font-size: 1.111vw;
+    /* margin-top: 5vw; */
+    position: absolute;
+    top: 2.5vw;
+    text-align: center;
+}
+.__te_adageInteriorStudio__Home_heroSectionHeading{
+    color: #f6daa8;
+    /* border: white solid; */
+    font-size: 25vw;
+    padding: 1vw 5vw;
+    font-family: 'Italiana', serif;
+    z-index: 9;
+}
+#c1{
+    color: #f6daa8;
+    /* border: white solid; */
+    font-size: 25vw;
+    padding: 1vw 5vw;
+    font-family: 'Italiana', serif;
+    z-index: 9;
+}
+.__te_adageInteriorStudio__ParallaxBox{
+    /* border: white solid; */
+    min-width: 100vw;
+    min-height: 60vw;
+    margin-top: 15vw;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+._te__adageInteriorStudio__ReactiveImages{
+    position: absolute;
+    object-fit: cover;
+}
+#_te__adageInteriorStudio__ReactiveImages_1{
+    width: 34vw;
+    /* height: 100%; */
+    top: 0;
+    left: 50%;
+    object-fit: cover;
+    transform: translateX(-50%);
+}
+#_te__adageInteriorStudio__ReactiveImages_2{
+    width: 24vw;
+    /* height: 100%; */
+    top: 30%;
+    left: -5vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+#_te__adageInteriorStudio__ReactiveImages_3{
+    width: 24vw;
+    /* height: 10vh; */
+    top: 60%;
+    right: 25%;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+#_te__adageInteriorStudio__ReactiveImages_4{
+    width: 24vw;
+    /* height: 100%; */
+    top: 55%;
+    right: -7vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+.__te_adageInteriorStudio__Home_intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: white solid; */
+    width: fit-content;
+    font-size: 7vw;
+    /* word-spacing: 0.2vw; */
+    color: white;
+    /* font-family: "Raleway", sans-serif; */
+    font-family: 'Italiana', serif;
+    /* padding: 2.5vw 0; */
+    margin: 5vw 0;
+    /* position: relative; */
+}
+.__te_adageInteriorStudio__Home_intro p{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.111vw;
+    max-width: 34vw;
+}
+.__te_adageInteriorStudio__Home_intro__spacers{
+    display: flex;
+    /* border: white solid; */
+}
+.__te_adageInteriorStudio__Home_intro__spacers_handwritten{
+    display: flex;
+    
+}
+.__te_adageInteriorStudio__Home_intro__spacers_handwritten div{
+    color: #f6daa8;
+    /* font-family: 'Handwritten'; */
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 10vw;
+    margin-top: -2vw;
+}
+.__te_adageInteriorStudio__Home_intro__spacers_handwritten div div{
+    /* display: inline-block;
+    padding: 1vw; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    letter-spacing: .15em;
+
+}
+.__te_adageInteriorStudio__Home_intro__spacers .__te_adageInteriorStudio__CharacterAnimation{
+    /* border: white solid; */
+    margin-right: 2vw;
+}
+.__te_adageInteriorStudio__HomeNav{
+    display: flex;
+    margin-top: 2.5vh;
+    /* border: white solid; */
+}
+.__te_adageInteriorStudio__HomeNav_desktopMenuList{
+    display: flex;
+}
+.__te_adageInteriorStudio__HomeNav_desktopMenuList__listItems{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 0.8vw;
+    font-weight: 700;
+    /* margin-bottom: 0.5vh; */
+    padding: 0.5vw;
+}
+.__te_adageInteriorStudio__AdvancedParallaxBox{
+    /* border: white solid; */
+    min-width: 100vw;
+    min-height: 60vw;
+    /* margin-top: -15vw; */
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages1{
+    width: 44vw;
+    height: 100%;
+    top: 0;
+    left: 20vw;
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages2{
+    width: 20.87vw;
+    top: 0;
+    right: 10vw;
+}
+.__te_adageInteriorStudio__Home_HERO p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 4vw;
+    font-weight: 700;
+    text-align: center;
+}
+.__te_adageInteriorStudio__Home_HERO span{
+    font-weight: 900;
+    color: #f6daa8;
+}
+.__te_adageInteriorStudio__Studio_hero_HOME{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/archHomebg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* the home component styling ends here */
+
+
+
+
+
+
+/* studio route styling */
+
+.__te_adageInteriorStudio__Studio{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__Studio_hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/arch7.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.__te_adageInteriorStudio__AdvancedParallaxBox_Studio{
+    margin-top: 10vw;
+    min-width: 100vw;
+    min-height: 60vw;
+    /* margin-top: -15vw; */
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages_Studio1{
+    width: 44vw;
+    height: 100%;
+    top: 0;
+    left: 20vw;
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages_Studio2{
+    width: 30.87vw;
+    top: 0;
+    right: 0;
+}
+.__te_adageInteriorStudio__ParallaxBox_Studio{
+    min-width: 100vw;
+    min-height: 60vw;
+    /* margin-top: -15vw; */
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio1{
+    width: 42vw;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    object-fit: cover;
+    transform: translateX(-50%);
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio2{
+    width: 28vw;
+    height: 70%;
+    top: 55%;
+    left: -5vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio3{
+    width: 34vw;
+    /* height: 10vh; */
+    top: 85%;
+    right: 5vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio4{
+    width: 24vw;
+    /* height: 100%; */
+    top: 55%;
+    right: -7vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+.__te_adageInteriorStudio__InteractiveImageBox{
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 10vw;
+    background-color: #ffffff;
+    background-image: url("https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/arch22bg.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: url('https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/dragMouse.png') 22 22, auto;
+}
+.__te_adageInteriorStudio__InteractiveImageBox div{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    will-change: transform;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: 0 62.5px 125px -25px rgba(43, 43, 43, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+}
+/* studio route styling ends*/
+
+
+
+
+
+/* the work component styling starts here */
+
+.__te_adageInteriorStudio__Work{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__Work_hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/workHero.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.__te_adageInteriorStudio__WorkViewer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: #ffffff solid; */
+    margin: 5vw 0;
+    position: relative;
+}
+.__te_adageInteriroStudio__WorkViewer_content{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* border: #ffffff solid; */
+}
+.__te_adageInteriorStudio__WorkViewer_contentTag{
+    color: #f6daa8;
+    font-weight: 500;
+    font-size: 0.8vw;
+    display: none;
+    /* padding: 5vw; */
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    /* font-family: 'Italiana', serif; */
+    font-family: "Raleway", sans-serif;
+    /* font-family: 'Mrs Saint Delafield', cursive; */
+    transform: translateX(-50%);
+    /* z-index: 99; */
+}
+/* the work component styling ends here */
+
+
+
+
+
+/* the work module styling starts here */
+
+.__te_adageInteriorStudio__WorkModules{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__ImageShuffler{
+    /* overscroll-behavior-y: contain; */
+    user-select: none;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    overflow: hidden;
+    width: 80vw;
+    height: 40vw;
+    position: relative;
+    /* border: white solid; */
+}
+.__te_adageInteriorStudio__ImageShuffler div{
+    /* overscroll-behavior-y: contain; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* border: solid white; */
+
+}
+.__te_adageInteriorStudio__ImageShuffler div div{
+    /* overscroll-behavior-y: contain; */
+    /* background-color: white; */
+    /* border: white solid; */
+    background-size: auto 85%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20vw;
+    max-width: 300px;
+    height: 40vw;
+    max-height: 570px;
+    overflow: hidden;
+    will-change: transform;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3); */
+
+}
+.__te_adageInteriorStudio__Work_hero_sub{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* border: white solid; */
+    align-items: center;
+}
+.__te_adageInteriorStudio__ImageZoomer{
+    width: 100vw;
+    height: 100vh;
+    /* border: solid white; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* the work module styling ends here */
+
+
+
+
+
+/* the adage section styling starts here */
+.__te_adageInteriorStudio__Adage{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__AboutDescription{
+    width: 70vw;
+    display: flex;
+    /* border: white solid; */
+    justify-content: space-around;
+}
+.MNavBtn{
+    display: none;
+}
+.tm{
+    display: none;
+}
+.__te_adageInteriorStudio__AboutDescription_left{
+    width: 60vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.__te_adageInteriorStudio__AboutDescription_left img{
+    width: 20vw;
+    margin: 5vw 0;
+}
+.__te_adageInteriorStudio__AboutDescription_right{
+    width: 100vw;
+    width: 40vw;
+}
+.__te_adageInteriorStudio__MNav{
+    display: none;
+}
+.__te_adageInteriorStudio__AboutDescription_right p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.111vw;
+    padding: 5vw;
+}
+.__te_adageInteriorStudio__DraggableImages{
+    width: 100vw;
+    height: 100vh;
+    /* border: white solid; */
+    position: relative;
+}
+.__te_adageInteriorStudio__DraggableImages div{
+    position: absolute;
+    width: 30vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#team1{
+    top: 0;
+    left: 10%;
+    width: 30vw;
+    height: 40vh;
+}
+#team2{
+    top: 20%;
+    left: 40%;
+    width: 34vw;
+    height: 40vh;
+}
+#team3{
+    top: 50%;
+    left: 60%;
+    width: 40vw;
+    height: 50vh;
+}
+/* the adage section styling ends here */
+
+
+
+
+/* the contact section styling starts here */
+.__te_adageInteriorStudio__Contact{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__Contact_hero{
+    width: 50vw;
+    /* height: 20vw; */
+    /* border: white solid; */
+    margin-bottom: 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.__te_adageInteriorStudio__Contact_hero span{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+    /* align-items: center; */
+    /* border: solid white; */
+    color: white;
+    max-width: 15vw;
+    min-height: 10vw;
+}
+.__te_adageInteriorStudio__Contact_hero span a{
+    color: #f6daa8;
+    font-size: 0.8vw;
+}
+.descHeader{
+    font-family: 'Italiana', serif;
+    margin-bottom: 0.5vw;
+}
+/* the contact section styling ends here */
+
+
+
+
+/* the root component styling starts here */
+
+#__te_sites__adageInteriorStudio{    
+    display: block;
+    /* border: black solid; */
+}
+.__te_promo{
+    color: #f6daa8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    padding: 1vw;
+}
+/* the root component styling ends here */
+
+
+
+
+
+
+/* the footer component styling starts here */
+
+.__te_adageInteriorStudio__Footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+.__te_adageInteriorStudio__Footer p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1vh;
+    text-align: center;
+    font-size: 1.111vw;
+    color: #f6daa8;
+}
+.__te_adageInteriorStudio__Footer span ul{
+    display: flex;
+    /* border: white solid; */
+    justify-content: center;
+}
+.__te_adageInteriorStudio__Footer span ul li a img{
+    width: 2.5vw;
+}
+/* the footer component styling ends here */
+
+
+
+
+
+
+/* the OnWindowLoad component styling starts here */
+
+.__te_adageInteriorStudio__OnWindowLoad{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    z-index: 999;
+}
+
+/* .__te_adageInteriorStudio__OnWindowLoad_logo{width: 15vw;} */
+
+/* the OnWindowLoad component styling ends here */
+
+
+
+
+
+
+/* the CharacterAnimation styling starts here */
+
+.__te_adageInteriorStudio__CharacterAnimation{
+    /* border: white solid; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 1vw; */
+}
+
+.__te_adageInteriorStudio__CharacterAnimation_wrapper{
+    width: 12vw;
+    font-family: 'Italiana', serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transform: translateY(-1.7vh);
+    /* border: white solid; */
+}
+
+/* the CharacterAnimationWrapper styling ends here */
+
+
+
+
+
+
+/* the main app component styling starts here */
+
+.__te_adageInteriorStudio__App{
+    display: flex;
+    flex-direction: column;
+}
+
+/* the main app component styling ends here */
+
+
+
+
+
+
+/* the TopLeftFloat styling starts here */
+
+.__te_adageInteriorStudio__TopLeftFloat{
+    display: block;
+    width: 5vw;
+    position: absolute;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+    z-index: 9;
+}
+.__te_adageInteriorStudio__TopLeftFloat_logo{
+    width: 100%;
+}
+
+/* the TopLeftFloat styling ends here */
+
+
+
+
+
+
+
+/* the BottomRightFloat styling starts here */
+
+.__te_adageInteriorStudio__BottomRightFloat{
+    display: block;
+    position: fixed;
+    /* margin-bottom: 5vh; */
+    /* margin-right: 5vw; */
+    z-index: 9;
+    bottom: 0;
+    right: 0;
+}
+.__te_adageInteriorStudio__BottomRightFloat_desktopMenuList{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 3vw;
+}
+.__te_adageInteriorStudio__BottomRightFloat_desktopMenuList__listItems{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 0.8vw;
+    font-weight: 700;
+    margin-bottom: 0.5vh;
+}
+/* the BottomRightFloat styling ends here */
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+    /* home route */
+
+.__te_adageInteriorStudio__Home_welcomeHeader{      
+    display: none;
+    position: absolute;
+    top: 25vw;
+    font-size: 3vw;
+}
+.__te_adageInteriorStudio__Home_heroSectionHeading{
+    margin-top: 15vh;
+}
+.__te_adageInteriorStudio__ParallaxBox{
+    min-height: 50vh;
+    /* border: white solid; */
+    margin-bottom: 10vw;
+}
+#_te__adageInteriorStudio__ReactiveImages_1{
+    width: 54vw;
+    left: 50%;
+}
+#_te__adageInteriorStudio__ReactiveImages_2{
+    width: 34vw;
+    top: 50%;
+    left: -5vw;
+}
+#_te__adageInteriorStudio__ReactiveImages_3{
+    width: 24vw;
+    top: 90%;
+    right: 15%;
+    display: none;
+}
+#_te__adageInteriorStudio__ReactiveImages_4{
+    width: 34vw;
+    top: 110%;
+    right: -7vw;
+}
+.__te_adageInteriorStudio__Home_intro{
+    font-size: 7vw;
+    /* border: solid white; */
+}
+.__te_adageInteriorStudio__Home_intro p{
+    font-size: 4vw;
+    max-width: 60vw;
+}
+.__te_adageInteriorStudio__Home_intro__spacers{
+    
+}
+.__te_adageInteriorStudio__Home_intro__spacers .__te_adageInteriorStudio__CharacterAnimation{
+    font-size: 10vw;
+    /* border: white solid; */
+}
+.__te_adageInteriorStudio__Home_intro__spacers_handwritten div{
+    font-size: 17vw;
+}
+#c2 div,#c3 div{
+    font-size: 17vw;
+}
+.__te_adageInteriorStudio__HomeNav_desktopMenuList__listItems{
+    font-size: 3.5vw;
+    padding:2vw;
+}
+.__te_adageInteriorStudio__AdvancedParallaxBox{
+    min-height: 60vh;
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages1{
+    width: 64vw;
+    height: 80%;
+    left: 15vw;
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages2{
+    width: 34.87vw;
+    right: -5vw;
+}
+
+/* the home component styling ends here */
+
+
+
+
+
+
+/* studio route styling */
+
+.__te_adageInteriorStudio__Studio{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: white solid; */
+}
+.__te_adageInteriorStudio__Studio_hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/arch7.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* border: white solid; */
+}
+.__te_adageInteriorStudio__AdvancedParallaxBox_Studio{
+    margin-top: 10vw;
+    min-width: 100vw;
+    min-height: 60vh;
+    /* margin-top: -15vw; */
+    display: block;
+    position: relative;
+    overflow: hidden;
+    /* border: white solid; */
+
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages_Studio1{
+    width: 60vw;
+    height: 80%;
+    top: 0;
+    left: 10vw;
+}
+#_te__adageInteriorStudio__AdvancedParallaxBox_reactiveImages_Studio2{
+    width: 44.87vw;
+    top: 0;
+    right: -10vw;
+}
+.__te_adageInteriorStudio__ParallaxBox_Studio{
+    min-width: 100vw;
+    min-height: 60vh;
+    /* margin-top: -15vw; */
+    display: block;
+    position: relative;
+    overflow: hidden;
+    /* border: white solid; */
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio1{
+    width: 50vw;
+    height: 80%;
+    top: 0;
+    left: 50%;
+    object-fit: cover;
+    transform: translateX(-50%);
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio2{
+    width: 38vw;
+    height: 50%;
+    top: 65%;
+    left: -5vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio3{
+    width: 40vw;
+    /* height: 10vh; */
+    top: 95%;
+    right: 0vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+#_te__adageInteriorStudio__ReactiveImages__Studio4{
+    width: 24vw;
+    /* height: 100%; */
+    top: 55%;
+    right: -7vw;
+    object-fit: cover;
+    /* transform: translateX(-50%); */
+}
+.__te_adageInteriorStudio__InteractiveImageBox{
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 90vh;
+    margin-bottom: 10vw;
+    background-color: #ffffff;
+    background-image: url("https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/arch22bg.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: url('https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/dragMouse.png') 22 22, auto;
+    /* pointer-events: fill; */
+    /* border: white solid; */
+}
+.__te_adageInteriorStudio__InteractiveImageBox div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: 0 62.5px 125px -25px rgba(43, 43, 43, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+}
+/* studio route styling ends*/
+
+
+
+
+
+/* the work component styling starts here */
+
+.__te_adageInteriorStudio__Work{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__Work_hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/workHero.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.__te_adageInteriorStudio__WorkViewer{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: #ffffff solid; */
+    margin: 5vw 0;
+    position: relative;
+}
+.__te_adageInteriroStudio__WorkViewer_content{  
+    width: 60vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* border: #831818 solid; */
+}
+.__te_adageInteriorStudio__WorkViewer_contentTag{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 3vw;
+    /* border: white solid; */
+    min-width: 100%;
+    text-align: center;
+    /* border: #ffffff solid; */
+
+    /* padding: 5vw; */
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    /* font-family: 'Italiana', serif; */
+    font-family: "Raleway", sans-serif;
+    /* font-family: 'Mrs Saint Delafield', cursive; */
+    transform: translateX(-50%);
+    /* z-index: 99; */
+}
+/* the work component styling ends here */
+
+
+
+
+
+/* the work module styling starts here */
+
+.__te_adageInteriorStudio__WorkModules{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__ImageShuffler{
+    /* overscroll-behavior-y: contain; */
+    user-select: none;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    overflow: hidden;
+    width: 80vw;
+    height: 40vw;
+    position: relative;
+    /* border: white solid; */
+    margin-top: 15vh;
+}
+.__te_adageInteriorStudio__ImageShuffler div{
+    /* overscroll-behavior-y: contain; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* border: solid white; */
+
+}
+.__te_adageInteriorStudio__ImageShuffler div div{
+    /* overscroll-behavior-y: contain; */
+    /* background-color: white; */
+    /* border: white solid; */
+    background-size: auto 85%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20vw;
+    max-width: 300px;
+    height: 40vw;
+    max-height: 570px;
+    overflow: hidden;
+    will-change: transform;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3); */
+
+}
+.wsm{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    /* justify-content: center; */
+    /* border: white solid; */
+    align-items: center;
+}
+.__te_adageInteriorStudio__ImageZoomer{
+    width: 100vw;
+    height: 50vh;
+    /* border: solid white; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* the work module styling ends here */
+
+
+
+
+
+/* the adage section styling starts here */
+.__te_adageInteriorStudio__Adage{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__AboutDescription{
+    width: 100vw;
+    display: flex;
+    /* border: white solid; */
+    justify-content: space-around;
+}
+.__te_adageInteriorStudio__AboutDescription_left{
+    width: 60vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.__te_adageInteriorStudio__AboutDescription_left img{
+    width: 40vw;
+    margin: 5vw 0;
+}
+.__te_adageInteriorStudio__AboutDescription_right{
+    width: 100vw;
+    width: 70vw;
+}
+.__te_adageInteriorStudio__AboutDescription_right p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+    padding: 5vw;
+}
+.__te_adageInteriorStudio__DraggableImages{
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 5vh;
+    /* border: white solid; */
+    position: relative;
+}
+.__te_adageInteriorStudio__DraggableImages div{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    /* border: white solid; */
+}
+#team1{
+    top: 0;
+    left: 10%;
+    width: 40vw;
+    height: 30vh;
+}
+#team2{
+    top: 20%;
+    left: 40%;
+    width: 44vw;
+    height: 25vh;
+}
+#team3{
+    top: 50%;
+    left: 60%;
+    width: 40vw;
+    height: 20vh;
+}
+/* the adage section styling ends here */
+
+
+
+
+/* the contact section styling starts here */
+.__te_adageInteriorStudio__Contact{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__te_adageInteriorStudio__Contact_hero{
+    width: 50vw;
+    /* height: 20vw; */
+    margin-top: 5vh;
+    /* border: white solid; */
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.__te_adageInteriorStudio__Contact_hero span{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+    font-weight: 600;
+    align-items: center;
+    /* align-items: center; */
+    /* border: solid white; */
+    color: white;
+    /* max-width: 15vw; */
+    min-width: 50vw;
+    margin-bottom: 5vh;
+    /* min-height: 10vw; */
+}
+.__te_adageInteriorStudio__Contact_hero span a{
+    color: #f6daa8;
+    font-size: 3vw;
+    text-align: center;
+}
+.descHeader{
+    font-family: 'Italiana', serif;
+    margin-bottom: 0.5vw;
+}
+/* the contact section styling ends here */
+
+
+
+
+/* the root component styling starts here */
+
+#__te_sites__adageInteriorStudio{    
+    display: block;
+    /* border: black solid; */
+}
+.__te_promo{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    padding: 1vw;
+    margin-bottom: 2vh;
+}
+/* the root component styling ends here */
+
+
+
+
+
+
+/* the footer component styling starts here */
+
+.__te_adageInteriorStudio__Footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+.__te_adageInteriorStudio__Footer p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1vh;
+    text-align: center;
+    font-size: 3vw;
+    color: #f6daa8;
+}
+.__te_adageInteriorStudio__Footer span ul{
+    display: flex;
+    /* border: white solid; */
+    justify-content: center;
+}
+.__te_adageInteriorStudio__Footer span ul li a img{
+    width: 6vw;
+}
+/* the footer component styling ends here */
+
+
+
+
+
+
+/* the OnWindowLoad component styling starts here */
+
+.__te_adageInteriorStudio__OnWindowLoad{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    z-index: 1999;
+}
+
+/* .__te_adageInteriorStudio__OnWindowLoad_logo{width: 15vw;} */
+
+/* the OnWindowLoad component styling ends here */
+
+
+
+
+
+
+/* the CharacterAnimation styling starts here */
+
+.__te_adageInteriorStudio__CharacterAnimation{
+    /* border: white solid; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 1vw; */
+}
+
+.__te_adageInteriorStudio__CharacterAnimation_wrapper{
+    width: 12vw;
+    font-family: 'Italiana', serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transform: translateY(-1.7vh);
+    /* border: white solid; */
+}
+
+/* the CharacterAnimationWrapper styling ends here */
+
+
+
+
+
+
+/* the main app component styling starts here */
+
+.__te_adageInteriorStudio__App{
+    display: flex;
+    flex-direction: column;
+}
+
+/* the main app component styling ends here */
+
+
+
+
+
+
+/* the TopLeftFloat styling starts here */
+
+
+
+/* the TopLeftFloat styling ends here */
+
+
+
+
+
+
+
+/* the BottomRightFloat styling starts here */
+.__te_adageInteriorStudio__BottomRightFloat{
+    display: none;
+}
+
+.__te_adageInteriorStudio__MNav{
+    display: block;
+    position: fixed;
+    /* display: none; */
+    /* margin-bottom: 5vh; */
+    /* margin-right: 5vw; */
+    background-color: black;
+    z-index: 998;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.__te_adageInteriorStudio__MNav_desktopMenuList{
+    text-align: right;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 3vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.__te_adageInteriorStudio__MNav_desktopMenuList__listItems{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 10vw;
+    font-weight: 700;
+    margin-bottom: 0.5vh;
+}
+/* the BottomRightFloat styling ends here */
+    .__te_adageInteriorStudio__TopLeftFloat{
+        width: 15vw;
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .__te_adageInteriorStudio__CharacterAnimation_wrapper{
+        width: 40vw;
+        font-size: 10vw;
+    }
+    .MNavBtn{
+        display: block;
+        z-index: 999;
+        position: fixed;
+        color:#f6daa8;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        outline: none;
+        margin-top: 5vh;
+        margin-right: 5vh;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .tm{
+        display: block;
+        z-index: 99;
+        position: fixed;
+        color:#f6daa8;
+        font-family: 'Raleway', sans-serif;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        outline: none;
+        margin-top: 5vh;
+        margin-left: 5vh;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .__te_adageInteriorStudio__TopLeftFloat{
+        position: absolute;
+        left: 15vw;
+    }
+}
+
