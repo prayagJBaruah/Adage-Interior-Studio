@@ -3,10 +3,10 @@ import {useSpring, animated, interpolate, useSprings, useChain, useTrail, config
 import CharacterAnimation from '../CharacterAnimations';
 import {Link} from 'react-router-dom';
 import Footer from '../Footer';
-
+import Modal from '../Modal';
 
 const Contact = () => {
-
+    const [modalVisible, setModalVisibility] = useState(false);
     const self_StudioIntro_descStyle = useSpring({
         opacity:1,
         from:{
@@ -38,6 +38,7 @@ const Contact = () => {
                     <p className = "descHeader">CONTACT US</p>
                     <a href="mailto:arpita.adage@gmail.com">arpita.adage@gmail.com</a>
                     <a href="tel:9654838456">9654838456</a>
+                    <p onClick = {() => setModalVisibility(true)} id = "popup">Enquire Now</p>
                 </span>
                 <span>
                 <p className = "descHeader">ADDRESS</p>
@@ -48,7 +49,7 @@ const Contact = () => {
                 <a href="https://thetektap.co.in/pages/Theesaan%20Enterprises/Theesaan%20Enterprises.html"><p>Coded with <img width = "10px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABJklEQVRYhe2UUUoCURSG/yMYgQvwOXcQuYh8TxBXIa2jB+utTRhUu4jagW8imq+9CMLXQ3fgauPMVedeI/xh4Mww537fnAMjnXLKXwxQA/rACzAFVsDM3d8A9ZyeOtAFXt27K9f7DPSAWii8BXxQnDFw7fV03LOivAMXIfDPkoP83LkrNPOtEvyMvezLq8gb3jr8vfQkXQbt6bC0JXXzBPoJ4L9YvsBVQoF2VlhWAEtJZ4kElmZ2Lq1PYJIIvsbyBZ4SCoyywl9BU9JYUiMy/EtSy8wWkjcBM5tLuo0Ml6RBBs8NMIz4ExqW6gEG3EeAPwJWKhBJIhweQWJ3eIUS+8MrkDgcviHxcBT4HhLVw3eQiAcPkIgPL5BIB8+RSA/fkDgO/N/kG7ztJC6dJsGDAAAAAElFTkSuQmCC"></img> by Theesaan Enterprises</p></a>
             </div>
             <Footer/>
-            
+            <Modal open = {modalVisible} close = {() => setModalVisibility(false)}/>
         </div>
     )
 }
