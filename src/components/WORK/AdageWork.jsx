@@ -52,35 +52,42 @@ const Work = () => {
         if(winSize <= 480){
             return(
                 <>
-                <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work1'>
-            <WorkViewer children = "LOREM IPSUM" position = 'relative' width = '54vw'  height = '40vh' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r4_2.jpg'/>
+                <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/panecea-the-village'>
+            <WorkViewer children = "LOREM IPSUM" position = 'relative' width = '54vw'  height = '40vh' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r4_6.png'/>
             </Link></div>
-            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work2'>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/protech-pelican-apartments'>
             <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "0" left = "0" width = '50vw'  height = '100%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_1.jpg'/>
             </Link></div>
-            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work3'>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/bs-fitness-gym'>
             <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "10%" left = "40%" width = '40vw'  height = '80%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r3_1.jpg'/>
             </Link></div>
-            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work4'>
-            <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "0" left = "20%" width = '56vw'  height = '100%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r1_2.jpg'/>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/orchid-apartments'>
+            <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "0" left = "20%" width = '56vw'  height = '100%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r0_2.jpg'/>
             </Link></div>
-                </>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/royal-crown'>
+            <WorkViewer children = "LOREM IPSUM" position = 'relative' width = '54vw'  height = '40vh' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r4_2.jpg'/>
+            </Link></div>
+            </>
             )
         }
         else{
             return(<>
-            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work1'>
-            <WorkViewer children = "LOREM IPSUM" position = 'relative' width = '34vw'  height = '100vh' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r4_2.jpg'/>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/panecea-the-village'>
+            <WorkViewer children = "LOREM IPSUM" position = 'relative' width = '34vw'  height = '100vh' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r4_6.png'/>
             </Link></div>
-            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work2'>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/protech-pelican-apartments'>
             <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "0" left = "0" width = '40vw'  height = '100%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_1.jpg'/>
             </Link></div>
-            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work3'>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/bs-fitness-gym'>
             <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "0" left = "40%" width = '30vw'  height = '100%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r3_1.jpg'/>
             </Link></div>
-            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/work4'>
-            <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "0" left = "20%" width = '34vw'  height = '100%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r1_2.jpg'/>
-            </Link></div></>)
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/orchid-apartments'>
+            <WorkViewer children = "LOREM IPSUM" position = 'absolute' top = "0" left = "20%" width = '34vw'  height = '100%' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r0_2.jpg'/>
+            </Link></div>
+            <div className="__te_adageInteriorStudio__WorkViewer"><Link to = '/work/royal-crown'>
+            <WorkViewer children = "LOREM IPSUM" position = 'relative' width = '34vw'  height = '100vh' imgSrc = 'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r4_2.jpg'/>
+            </Link></div></>
+            )
         }
     }
     return(

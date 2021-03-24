@@ -296,7 +296,7 @@ body{
 .__te_adageInteriorStudio__ParallaxBox_Studio{
     min-width: 100vw;
     min-height: 60vw;
-    /* margin-top: -15vw; */
+    margin-top: 10vw;
     display: block;
     position: relative;
     overflow: hidden;
@@ -793,9 +793,11 @@ body{
     /* home route */
 
 .__te_adageInteriorStudio__Home_welcomeHeader{      
-    display: none;
+    /* display: none; */
     position: absolute;
-    top: 25vw;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(0,-350%);
     font-size: 3vw;
 }
 .__te_adageInteriorStudio__Home_heroSectionHeading{

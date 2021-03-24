@@ -17,6 +17,7 @@ const Studio = () => {
 
     //useRef for all parent components:
     const self_intro2 = useRef();
+    const self_intro3 = useRef();
     const self_Outro_ref = useRef();
 
 
@@ -25,7 +26,12 @@ const Studio = () => {
     const self_intro2__child2 = useRef();
     const self_intro2__child3 = useRef();
     const self_intro2__child4 = useRef();
+    const self_intro3__child1 = useRef();
+    const self_intro3__child2 = useRef();
+    const self_intro3__child3 = useRef();
+    const self_intro3__child4 = useRef();
     const self_intro2__child5 = useRef();
+    const self_intro3__child5 = useRef();
     const self_intro2__child6 = useRef();
     const self_Outro_ref_child1 = useRef();
     const self_Outro_ref_child2 = useRef();
@@ -46,6 +52,14 @@ const Studio = () => {
         },
         config:config.molasses
     });
+    const self_StudioIntro3_descStyle = useSpring({
+        ref:self_intro3__child5,
+        opacity:1,
+        from:{
+            opacity:0
+        },
+        config:config.molasses
+    });
     const self_HomeIntro_HomeNav = useSpring({
         ref: self_intro2__child6,
         opacity:1,
@@ -59,6 +73,7 @@ const Studio = () => {
 
     //useStates to handle component useChains:
     const [self_intro2__anim, setI2_A] = useState(false);
+    const [self_intro3__anim, setI3_A] = useState(false);
     const [self_Outro__anim, setO_A] = useState(false);
 
     const self_scroll_handler = () => {
@@ -69,12 +84,15 @@ const Studio = () => {
         })
         if(window.innerHeight > self_intro2.current.getBoundingClientRect().top)
             setI2_A(true);
+        if(window.innerHeight > self_intro3.current.getBoundingClientRect().top)
+            setI3_A(true);
         if(window.innerHeight > self_Outro_ref.current.getBoundingClientRect().top)
             setO_A(true);
     }
 
     //useChain to complete Animations:
     useChain(self_intro2__anim ? [self_intro2__child1, self_intro2__child2, self_intro2__child3, self_intro2__child4, self_intro2__child5, self_intro2__child6]: [], [0.3, 1.4, 1.5, 2.5, 3.5, 4]);
+    useChain(self_intro3__anim ? [self_intro3__child1, self_intro3__child2, self_intro3__child3, self_intro3__child4, self_intro3__child5]: [], [0.3, 1.4, 1.5, 2.5, 3.5]);
     useChain(self_Outro__anim ? [self_Outro_ref_child1, self_Outro_ref_child2] : [], [0.3,1]);
 
     useLayoutEffect(() => {
@@ -123,6 +141,21 @@ const Studio = () => {
                     </animated.div>
                 </animated.div>
             <InteractiveImageBox/>
+            <animated.div ref = {self_intro3} className="__te_adageInteriorStudio__Home_intro">
+                    <div className="__te_adageInteriorStudio__Home_intro__spacers">
+                    <CharacterAnimation children = {'VASTU'} xTrans = {0} yTrans = {0} parentRef = {self_intro3__child1}/>
+                    </div>
+                    <div className="__te_adageInteriorStudio__Home_intro__spacers">
+                    <CharacterAnimation children = {'CONSULTATION'} xTrans = {0} yTrans = {0} parentRef = {self_intro3__child2}/>
+                    <CharacterAnimation children = {''} xTrans = {0} yTrans = {0} parentRef = {self_intro3__child3}/>
+                    </div>
+                    <div className="__te_adageInteriorStudio__Home_intro__spacers_handwritten">
+                    <CharacterAnimation children = {'details'} xTrans = {0} yTrans = {0}parentRef = {self_intro3__child4}/>
+                    </div>
+                    <animated.p style = {self_StudioIntro3_descStyle}>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                    </animated.p>
+                </animated.div>
             <ParallaxBox/>
             <Link to = '/work'>
             <div ref = {self_Outro_ref} className = "__te_adageInteriorStudio__Home_intro">

@@ -87,7 +87,7 @@ const Home = () => {
                     <div id = "c1">
                     <CharacterAnimation children = {'ADAGE'} xTrans = {0} yTrans = {0}/>
                     </div>
-                    <p><span>"</span>WE ADD AN <span>H</span> TO YOUR <span>SPACE</span><span>"</span></p>
+                    <p><span>"</span>WE ADD MORE <span>AGE</span> TO YOUR <span>SPACE</span><span>"</span></p>
                 </div>
             </div>
                 

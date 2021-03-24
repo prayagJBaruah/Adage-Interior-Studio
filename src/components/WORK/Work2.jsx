@@ -12,12 +12,13 @@ import ParallaxBox from './ParallaxBoxDRY';
 import ImageZoomer from './ImageAutoZoomer';
 //The primary component here:
 const imageData1 = [
-    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_6.jpg',
-    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_5.jpg',
-    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_4.jpg',
-    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_3.jpg',
-    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_2.jpg',
     'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r2_1.jpg',
+    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/retouch2.jpg',
+    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r1_2.jpg',
+    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r1_3.jpg',
+    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r1_4.jpg',
+    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r1_5.jpg',
+    'https://theesaan-enterprises-server.herokuapp.com/sites/adage/data/visual-data/r1_6.jpg',
 ]
 const Work2 = () => {
     const self_Outro_ref = useRef();
@@ -62,23 +63,23 @@ const Work2 = () => {
                     <CharacterAnimation children = {'PROJECT'} xTrans = {0} yTrans = {0} />
                     </div>
                     <div className="__te_adageInteriorStudio__Home_intro__spacers_handwritten">
-                    <CharacterAnimation children = {'work'} xTrans = {0} yTrans = {0}/>
+                    <CharacterAnimation children = {'pelican-apts'} xTrans = {0} yTrans = {0}/>
                     </div>
                     <animated.p style = {self_StudioIntro_descStyle}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </animated.p>
                 </animated.div>
             </div>
-            <AdvancedParallaxBox img1Src = {imageData1[5]} img2Src = {imageData1[2]}/>
-            <ImageZoomer bg = {imageData1[4]}/>
-            <ParallaxBox img1Src = {imageData1[3]} img2Src = {imageData1[4]} img3Src = {imageData1[2]}/>
-            <Link to = '/work/work3'>
+            <AdvancedParallaxBox img1Src = {imageData1[0]} img2Src = {imageData1[2]}/>
+            <ImageZoomer bg = {imageData1[1]}/>
+            <ParallaxBox img1Src = {imageData1[6]} img2Src = {imageData1[5]} img3Src = {imageData1[4]}/>
+            <Link to = '/work/bs-fitness-gym'>
             <div ref = {self_Outro_ref} className = "__te_adageInteriorStudio__Home_intro">
                     <div className="__te_adageInteriorStudio__Home_intro__spacers">
                     <CharacterAnimation children = {'NEXT-PROJECT'} xTrans = {0} yTrans = {0} parentRef = {self_Outro_ref_child1}/>
                     </div>
                     <div className="__te_adageInteriorStudio__Home_intro__spacers_handwritten">
-                    <CharacterAnimation children = {'lorem-ipsum'} xTrans = {0} yTrans = {0} parentRef = {self_Outro_ref_child2}/>
+                    <CharacterAnimation children = {'b.s.-fitness'} xTrans = {0} yTrans = {0} parentRef = {self_Outro_ref_child2}/>
                     </div>
             </div>
             </Link>

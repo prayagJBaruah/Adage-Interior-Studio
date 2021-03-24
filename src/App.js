@@ -17,6 +17,7 @@ import Work2 from './components/WORK/Work2';
 import Work3 from './components/WORK/Work3';
 import Work4 from './components/WORK/Work4';
 import MNavLinks from './components/MNavLinks';
+import Work5 from './components/WORK/work5';
 
 // import MNav from './components/MobileNav';
 //Main component here
@@ -87,7 +88,7 @@ const App = () => {
         <span className = "__te_adageInteriorStudio__App">
             {/* all floating components here */}
 
-            <OnWindowLoad/>
+            {/* <OnWindowLoad/> */}
             {/* <Trademark/> */}
             <ToggleNav/>
             <TopLeftFloat/>
@@ -119,16 +120,19 @@ const App = () => {
                 <Route path = "/work" exact component = {Work}/>
             </Switch>
             <Switch>
-                <Route path = "/work/work1" exact component = {Work1}/>
+                <Route path = "/work/panecea-the-village" exact component = {Work1}/>
             </Switch>
             <Switch>
-                <Route path = "/work/work2" exact component = {Work2}/>
+                <Route path = "/work/protech-pelican-apartments" exact component = {Work2}/>
             </Switch>
             <Switch>
-                <Route path = "/work/work3" exact component = {Work3}/>
+                <Route path = "/work/bs-fitness-gym" exact component = {Work3}/>
             </Switch>
             <Switch>
-                <Route path = "/work/work4" exact component = {Work4}/>
+                <Route path = "/work/orchid-apartments" exact component = {Work4}/>
+            </Switch>
+            <Switch>
+                <Route path = "/work/royal-crown" exact component = {Work5}/>
             </Switch>
 
             {/* contact route here */}
