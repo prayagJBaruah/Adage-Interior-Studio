@@ -88,7 +88,7 @@ const App = () => {
         <span className = "__te_adageInteriorStudio__App">
             {/* all floating components here */}
 
-            {/* <OnWindowLoad/> */}
+            <OnWindowLoad/>
             {/* <Trademark/> */}
             <ToggleNav/>
             <TopLeftFloat/>
